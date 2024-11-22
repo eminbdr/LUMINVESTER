@@ -2,7 +2,8 @@ source("info.R")
 
 source("analysis.R")
 
-ui <-{
+ui <-{paste("dsasds")
+
   navbarPage(
     "LUMINVESTER",
     tabPanel(lang$an_pg, analysisUi),

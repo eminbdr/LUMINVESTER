@@ -1,6 +1,10 @@
 {
-    "path": "~/STAT292/Final Project",
+    "path": "C:/Users/muham/Desktop/Coding/R/Final Project",
     "sortOrder": [
+        {
+            "columnIndex": 4,
+            "ascending": false
+        },
         {
             "columnIndex": 2,
             "ascending": true

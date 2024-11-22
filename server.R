@@ -1,6 +1,8 @@
 source("functions.R")
 source("global.R")
 server <- function(input, output) {
+  paste("dsasds")
+  
   column1 <- reactive({
     filtered_df <-subset(df,
                          sector == input$first_sector &
@@ -142,6 +144,8 @@ server <- function(input, output) {
       "\n",
       first_kth(min_mean_provinces,collapser,5)
     )
+    
+    
     
     
   })

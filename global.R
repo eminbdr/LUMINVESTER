@@ -1,7 +1,12 @@
 library(rjson)
 library(jsonlite)
-local_path <- "dataset.csv"
-df <- read.csv(local_path, sep = ";", encoding = "utf-8")
+
+library(qtl2)
+library(readr)
+library(stringi)
+local_path <- "clean1.csv"
+df <-read.csv(local_path,encoding = "utf-8",sep=";")
+
 colnames(df)[3:length(df)] <- gsub("\\.", "-", gsub("X", "", colnames(df)[3:length(df)]))
 sector <- unique(df[["sector"]])
 province <- unique(df[["province"]])
